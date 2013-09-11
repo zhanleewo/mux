@@ -1,0 +1,6 @@
+PROJECT(mux)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/common /usr/local/include)
+ADD_SUBDIRECTORY(common lib)
+ADD_SUBDIRECTORY(client bin)
+ADD_SUBDIRECTORY(server bin)
+

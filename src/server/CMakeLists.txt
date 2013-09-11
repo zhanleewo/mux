@@ -1,0 +1,6 @@
+SET(SRC_LIST server.cpp main.cpp)
+SET(SRC_H server.h)
+INCLUDE_DIRECTORIES(.)
+LINK_DIRECTORIES(${PROJECT_BINARY_DIR}/lib /usr/local/lib)
+ADD_EXECUTABLE(muxserver ${SRC_H} ${SRC_LIST})
+TARGET_LINK_LIBRARIES(muxserver libcommon.a event event_core event_extra)
